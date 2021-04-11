@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button onclick="buyProducts()">Click me</button>
+    <script>
+        function buyProducts() {
+            alert("Saludos, Bienvenido a La Pizza y el Pancho!");
+            // En esta variable se guarda lo que el cliente escoge.
+            let order = prompt("¿Qué deseas comer: pizza o pancho?");
+            // En estas dos variables se guarda el precio de los productos.
+            let panchoPrice = 50;
+            let pizzaPrice = 75;
+            if (order === "pancho") {
+                alert("Usted eligió " + order + " y su precio es de: $" + panchoPrice);
+            }
+            if (order === "pizza") {
+                alert("Usted eligió " + order + " y su precio es de: $" + pizzaPrice);
+            }
+        }
+    </script>
+</body>
+
+</html>
